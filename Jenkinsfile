@@ -13,7 +13,7 @@ node{
             sh "echo 'FIN A BIENTOT !!!!'"
         }
 
-    }
+    
     finally{
         cleanWs()
 
