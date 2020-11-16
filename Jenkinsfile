@@ -3,16 +3,10 @@ node{
     try{
 
     
-        stage('LANCEMENT DU DOCKER COMPOSE'){
-        sh "docker-compose up -d"
+        stage('TEST CHECK REPOSITORY NEXUS'){
+        sh "docker pull 172.30.1.1:5000/cicd/apachejm30"
         sh "docker ps"
        }
-
-
-        stage('ARRET DU DOCKER COMPOSE'){
-        sh "docker-compose down"
-        sh "docker ps"
-        }
 
 
         stage('FIN'){
