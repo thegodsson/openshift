@@ -1,5 +1,5 @@
 node{
-        cleanWs()
+        
     try{
 
 
@@ -8,8 +8,7 @@ node{
         }
 
     }
-    finally{
-        cleanWs()
+    
 
     }
 }
