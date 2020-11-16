@@ -1,1 +1,14 @@
+version: '3'
+
+services:
+
+    testjm:
+        image: 172.30.1.1:5000/cicd/apachejm30
+        container_name: testjm
+        privileged: true
+        command: /usr/sbin/init
+        ports:
+            - 8082:80
+        volumes:
+          - "/sys/fs/cgroup:/sys/fs/cgroup:ro"
 
